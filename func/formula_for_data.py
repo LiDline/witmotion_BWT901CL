@@ -6,9 +6,9 @@ def formula_for_data(number, file):       # Принимаем 16-тирично
         num2 = int.from_bytes(file.read(2), byteorder='little', signed = True)  # На одну характеристику идёт 2 байта
         num3 = int.from_bytes(file.read(2), byteorder='little', signed = True)
         
-        di = {'51' : [num1 / 32768 * 2, 
-                        num2 / 32768 * 2, 
-                        num3 / 32768 * 2],
+        di = {'51' : [num1 / 32768 * 16, 
+                        num2 / 32768 * 16, 
+                        num3 / 32768 * 16],
                 '52' :  [num1 / 32768 * 2000, 
                         num2 / 32768 * 2000, 
                         num3 / 32768 * 2000],
