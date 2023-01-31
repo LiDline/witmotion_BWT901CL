@@ -17,6 +17,7 @@
 - datetime;
 - numpy;
 - pandas.
+____
 Все библиотеки указаны в файле requirements.txt. Для быстрой установки отсутствующих библиотек в терминале выполните: pip install -r requirements.txt.
 
 ### Для запуска на Ubuntu через USB:
